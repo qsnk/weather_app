@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Главная страница {% endblock title %}
+
+{% block content %}
+    <div class="p-3">
+        <form id="weatherForm p-3" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Получить прогноз</button>
+        </form>
+    </div>
+{% endblock content %}

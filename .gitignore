@@ -1,0 +1,13 @@
+# ide
+.idea
+.vscode
+.venv
+
+# files
+.env
+
+# mac
+.DS_Store
+
+#database
+app/db.sqlite3

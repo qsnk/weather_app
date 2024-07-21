@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Главная страница {% endblock title %}
+
+{% block content %}
+    <h3 class="p-3">Прогноз погоды на данный момент:</h3>
+    <div class="container">
+        <p><strong>Город:</strong> {{ city }}</p>
+        <p><strong>Дата:</strong> {% now "d-m-Y" %}</p>
+        <p><strong>Температура:</strong> {{ weather_data.current.temperature_2m }} {{ weather_data.current_units.temperature_2m }}</p>
+        <p><strong>Ветер:</strong> {{ weather_data.current.wind_speed_10m }} {{ weather_data.current_units.wind_speed_10m }}</p>
+    </div>
+{% endblock content %}

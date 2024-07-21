@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Главная страница {% endblock title %}
+
+{% block content %}
+    <h3 class="p-3">API Документация</h3>
+    <div class="container">
+        <p><a href="/api"><strong>/api</strong></a> — Корень API</p>
+        <p><a href="/api/users"><strong>/api/users</strong></a> — Смотреть пользователей</p>
+        <p><a href="/api/history"><strong>/api/history</strong></a> — Смотреть историю просмотра пользователя</p>
+        <p><a href="/api/cities"><strong>/api/cities</strong></a> — Смотреть информацию по городам</p>
+        <hr>
+        <p><strong>/api-token-auth</strong> — Получить токен аутентификации</p>
+    </div>
+{% endblock content %}
