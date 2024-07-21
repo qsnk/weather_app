@@ -14,7 +14,7 @@
 
 ## Тестирование (Docker)
 ### 1. Клонировать репозиторий:
-```git clone ...```
+```git clone https://github.com/qsnk/weather_app.git```
 ### 2. Перейти в директорию:
 ```cd weather_app```
 ### 3. Добавить файл .env (c вводом ключа django):
